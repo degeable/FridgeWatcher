@@ -30,7 +30,7 @@ bool beep(void* p){
 
 void checkDoor(){
   //led on when door is open
-  digitalWrite(LedPin, HIGH)
+  digitalWrite(LedPin, HIGH);
   while(digitalRead(inputPin)== HIGH){
     timer.tick();
    }
