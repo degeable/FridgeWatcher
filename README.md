@@ -1,6 +1,9 @@
 # FridgeWatcher
 
 ESP32 Project to monitor, log and secure the fride door that stays open sometimes. A Webserver will give an overview of the fride usage and will make a beep noise if the door stays open for too long.
+The switch at the fride door will wake up the ESP32 that is put in deepsleep once the door cloeses.
+The webserver is just avialable when the door is open because of deepsleep.
+Thats why there is a branch "beepOnly" that will just beep if the door is open to long.
 
 ## Dependencies
 
